@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  de-final-prj-local:
+    image: cr.yandex/crp1r8pht0n0gl25aug1/de-final-prj:latest
+    container_name: de-final-prj-local
+    ports:
+      - 8998:8998
+      - 8280:8280
+      - 15432:5432
+    volumes:
+      - ./src/dags:/opt/airflow/dags
+      - ./src/csv_data:/opt/airflow/csv_data
+      - ./src/py:/opt/airflow/py
+    environment:
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      PYTHONPATH: /opt/airflow/py
+    restart: unless-stopped

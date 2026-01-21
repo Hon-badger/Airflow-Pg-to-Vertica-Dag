@@ -1,0 +1,63 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.log
+*.sqlite3
+*.db
+*.pkl
+*.pickle
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Airflow runtime (не коммитим) =====
+airflow.cfg
+airflow.db
+webserver_config.py
+standalone_admin_password.txt
+
+# Airflow local folders (часто создаются рядом с проектом)
+logs/
+plugins/__pycache__/
+dags/__pycache__/
+
+# Если используешь Celery/Redis — файлы pid/beat
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# ===== Secrets / env =====
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+**/service-account*.json
+
+# ===== OS / IDE =====
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# ===== Docker / Compose (локальные) =====
+docker-compose.override.yml
