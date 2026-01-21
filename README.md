@@ -1,6 +1,7 @@
 
 ### Project Structure:
 
+```text
 ├── README.md
 ├── creds
 │   └── vertica_creds.json
@@ -17,18 +18,11 @@
     │   │   └── vertica_transactions_insert.py
     │   ├── stg_vertica_currencies.py
     │   └── stg_vertica_transactions_put.py
-    ├── img
-    │   ├── Project_structure.png
-    │   ├── picture_1.png
-    │   ├── picture_2.png
-    │   ├── picture_3.png
-    │   ├── picture_4.png
-    │   └── picture_5.png
-    ├── py
     └── sql
         ├── vertica_currencies.sql
         ├── vertica_global_metrics.sql
         └── vertica_transactions.sql
+```
 
 ### How to work with project:
 
